@@ -24,6 +24,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.Cover)
             </th>
+            <!-- add a heading for rating -->
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -41,6 +46,11 @@
                     <a class="thumbnail pull-left" href="#"> <img class="media-object" src="~/img/covers/@item.Cover" style="width: 72px; height: 72px;" /></a>
                     @*@Html.DisplayFor(modelItem => item.Cover)*@
                 </td>
+                <!-- add a column for rating -->
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+
                 <td>
                     @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                         @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
