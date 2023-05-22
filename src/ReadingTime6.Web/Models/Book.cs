@@ -29,7 +29,7 @@ namespace ReadingTime6.Web.Models
         {
             Title = title;
             Author = author;
-            Cover = cover.Replace(".jpg",".png");
+            Cover = cover;
         }
 
         // Add a constructor that takes a rating
@@ -37,10 +37,9 @@ namespace ReadingTime6.Web.Models
         {
             Title = title;
             Author = author;
-            Cover = cover.Replace(".jpg", ".png");
+            Cover = cover;
             Rating = rating;
         }
 
     }
-
 }
